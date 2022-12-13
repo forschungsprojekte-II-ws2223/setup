@@ -10,8 +10,8 @@ Install the following tools:
 Build and start the Moodle and Jupyterhub containers by running these two commands:
 
 ```
-docker-compose -f setup/jupyterhub_docker/docker-compose.yml up -d --build
-docker-compose -f setup/moodle_docker/docker-compose.yml up -d --build
+docker-compose -f ./docker/jupyterhub/docker-compose.yml up -d
+docker-compose -f ./docker/moodle/docker-compose.yml up -d
 ```
 
 # 3. VS Code Setup
