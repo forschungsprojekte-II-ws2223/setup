@@ -1,0 +1,20 @@
+name: Docker Image CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Jupyterhub Docker image
+      #docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: |
+        cd jupyterhub_docker
+        docker-compose pull
+        docker-compose up -d
+
+    - name: Build the moodle_docker Docker image
+      run: |
+        cd moodle_docker
+        docker-compose up -d
