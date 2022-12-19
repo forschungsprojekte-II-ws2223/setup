@@ -76,17 +76,17 @@ c.JupyterHub.services = [
 ]
 
 # Database setup
-c.JupyterHub.db_url = 'postgresql://postgres:{password}@{host}/{db}'.format(
-    host=os.environ['POSTGRES_HOST'],
-    password=os.environ['POSTGRES_PASSWORD'],
-    db=os.environ['POSTGRES_DB'],
-)
+# c.JupyterHub.db_url = 'postgresql://postgres:{password}@{host}/{db}'.format(
+#     host=os.environ['POSTGRES_HOST'],
+#     password=os.environ['POSTGRES_PASSWORD'],
+#     db=os.environ['POSTGRES_DB'],
+# )
 
 # Dummy authenticator. Enable this for testing only!
 c.JupyterHub.authenticator_class = "dummy"
 
-# # JWT Authenticator Setup
-# # JSONWebTokenLocalAuthenticator provides local user creation
+# JWT Authenticator Setup
+# JSONWebTokenLocalAuthenticator provides local user creation
 # c.LocalAuthenticator.create_system_users=True
 # c.JupyterHub.authenticator_class = 'jwtauthenticator.jwtauthenticator.JSONWebTokenLocalAuthenticator'
 # # The secrect key used to generate the given token

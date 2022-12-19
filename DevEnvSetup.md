@@ -21,7 +21,7 @@ Install the following extensions:
 - Dev Containers
 - Docker
 - EditorConfig
-- HTML CSS Supporrt
+- HTML CSS Support
 - Mustache Template - Snippets & Autocomplete
 - PHP Extension Pack
 - PHP Sniffer
